@@ -1,0 +1,45 @@
+{
+  "name": "kPersistentCheckpoint",
+  "description": "Save checkpoints over server restarts",
+  "author": "Kodi022",
+  "config": 
+  {
+    "Enable-Debug": {
+      "description": "Enables debug broadcasts",
+      "type": "boolean",
+      "default": false
+    },
+    "Authorized-Users": {
+      "description": "To use risky commands (not working)",
+      "type": "players",
+      "default": []
+    }
+  },
+  "commands": 
+  [
+    {
+      "name": "/forgetcheckpoint",
+      "description": "forgets the checkpoint for the minigame/team your in (not working)",
+      "exmaple": "/forgetcheckpoint",
+      "args": []
+    },
+    {
+      "name": "/forgetallcheckpoints",
+      "description": "clears your store, removing all saved checkpoints",
+      "exmaple": "/forgetallcheckpoints",
+      "args": []
+    },
+    {
+      "name": "/persistentcheckpointsclearstore",
+      "description": "clears all saved checkpoints, requires auth",
+      "exmaple": "/persistentcheckpointsclearstore",
+      "args": []
+    },
+    {
+      "name": "/persistentcheckpointslog",
+      "description": "logs your saved checkpoints store, requires auth",
+      "exmaple": "/persistentcheckpointslog",
+      "args": []
+    }
+  ]
+}
